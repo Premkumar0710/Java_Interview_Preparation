@@ -1,0 +1,21 @@
+package JavaFundamentals.MultiThreading.Callables;
+
+import java.util.concurrent.Callable;
+
+public class SumPrinter implements Callable<Integer> {
+    int start;
+    int end;
+
+    public SumPrinter(int start, int end){
+        this.start = start;
+        this.end =end;
+    }
+    @Override
+    public Integer call() throws Exception {
+        int sum = 0;
+        for(int i=start ; i<=end; i++){
+            sum+=i;
+        }
+        return sum;
+    }
+}
