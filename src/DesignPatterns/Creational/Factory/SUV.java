@@ -1,8 +1,8 @@
 package DesignPatterns.Creational.Factory;
 
-public class Bus implements Vehicle {
+public class SUV implements Car{
     @Override
     public void drive() {
-        System.out.println("Driving Bus");
+        System.out.println("Driving SUV");
     }
 }

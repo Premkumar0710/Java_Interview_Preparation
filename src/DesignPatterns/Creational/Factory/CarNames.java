@@ -1,5 +1,5 @@
 package DesignPatterns.Creational.Factory;
 
-public interface Vehicle {
-    void drive();
+public enum CarNames {
+    SEDAN,SUV
 }
