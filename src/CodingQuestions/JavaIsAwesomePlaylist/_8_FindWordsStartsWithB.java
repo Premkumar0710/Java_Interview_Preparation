@@ -10,5 +10,10 @@ public class _8_FindWordsStartsWithB {
          List<String> splilist = Arrays.stream(s.split(" ")).toList();
          List<String> res = splilist.stream().filter(str->str.matches("(?i)^b.*")).toList(); // makes case insensitive
          System.out.println(res);
+         /*
+          List<String> asc = Arrays.stream(s.split(" ")).filter(f->f.startsWith("B") || f.startsWith("b")).toList();
+        System.out.print(asc);
+
+          */
     }
 }

@@ -20,7 +20,7 @@ public class Qns_1to8 {
         StringBuilder sb = new StringBuilder();
         for(int i=0;i<input.length();i++){
             char ch = input.charAt(i);
-            if(ch>=48 && ch<=57){
+            if(ch>=49 && ch<=57){
                 sb.append(ch);
             }
         }

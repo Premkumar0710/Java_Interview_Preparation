@@ -65,6 +65,26 @@ public class Qns_9to15 {
         System.out.println("Question 11 : " + res12.toString()); // RRAAAJJJJ
 
 
+        /* Alternate solution
+         String Input12 = "R2A3J4";
+        StringBuilder sb = new StringBuilder();
+        for(int i=0;i<Input12.length();i++){
+            char ch = Input12.charAt(i);
+            if(ch>='A' && ch<='Z'){
+                sb.append(ch);
+            }
+            else{
+                char ch1 = Input12.charAt(i-1);
+                int num = Character.getNumericValue(ch);
+                for(int j=1;j<num;j++){
+                    sb.append(ch1);
+                }
+            }
+        }
+       System.out.print(sb.toString());
+         */
+
+
         // 12 Compress String with Character Counts
         String Input1 = "AAABBBCCDDDD";
         Map<String, Long> map = Arrays.stream(Input1.split("")).collect(Collectors.groupingBy(Function.identity(), LinkedHashMap::new, Collectors.counting()));

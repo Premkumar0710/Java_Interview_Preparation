@@ -5,7 +5,7 @@ public class Client {
         Strategy strategy = new Strategy();
         strategy.setPayment(new CreditCard("3024"));
         strategy.payAmount(500);
-        
+
         /*
         Think of payment in an e-commerce app:
         A customer can pay by Credit Card, PayPal, or UPI.
