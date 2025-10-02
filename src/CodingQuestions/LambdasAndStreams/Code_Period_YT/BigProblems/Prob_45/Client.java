@@ -28,5 +28,6 @@ public class Client {
 
         System.out.println("Cheapest Product: "
                 + cheapest.getName() + " - " + cheapest.getPrice());
+
     }
 }

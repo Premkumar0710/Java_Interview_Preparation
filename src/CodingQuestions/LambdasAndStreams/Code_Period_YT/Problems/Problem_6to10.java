@@ -10,6 +10,9 @@ public class Problem_6to10 {
         String s = "I am learning Streams API in java";
         Arrays.stream(s.split(" ")).filter(x->x.replaceAll("[^aeiouAEIOU]","").length()==2).forEach(System.out::println);
 
+        // Alternate method
+        Arrays.stream(s.split("")).filter(w->w.chars().filter(c->"aeiouAEIOU".indexOf(c)!=-1).count() == 2).forEach(System.out::println);
+
         // 7. Given a list of integers, divide it into two lists (odd & even)
         int[] arr = {1,2,3,4,5,6,7,8};
         List<Integer> list = Arrays.stream(arr).boxed().toList();

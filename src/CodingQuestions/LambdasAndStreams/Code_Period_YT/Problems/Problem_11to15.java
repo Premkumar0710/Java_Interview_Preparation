@@ -44,6 +44,11 @@ public class Problem_11to15 {
                 .filter (x->x.matches("[0-9]+")).map(Integer :: valueOf)
                 .collect(Collectors.toList());
 
+        // alternate solution
+        List<Integer> alternate =Arrays.stream(s4)
+                .filter (x->x.matches("[0-9]+")).mapToInt(n-> Integer.parseInt(n)).boxed().toList();
+
+
         System.out.println("Solution for qn 14 is : " +ans4);
 
         // 15. find the product of first two numbers

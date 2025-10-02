@@ -10,13 +10,13 @@ public class User {
     private final String phone;
     private final String email;
 
-    private User(Builder builder) {
-        this.name = builder.name;
-        this.age = builder.age;
-        this.city = builder.city;
-        this.phone = builder.phone;
-        this.email = builder.email;
-    }
+        private User(Builder builder) {
+            this.name = builder.name;
+            this.age = builder.age;
+            this.city = builder.city;
+            this.phone = builder.phone;
+            this.email = builder.email;
+        }
 
     public static class Builder {
         // mandatory fields

@@ -20,6 +20,8 @@ public class Problem_16to20 {
         System.out.println();
 
         // how to collect this in a variable ?
+        String joinDistinct = s.chars().distinct().mapToObj(c->String.valueOf((char) c)).collect(Collectors.joining());
+        System.out.println(joinDistinct);
 
         // 17. multiply alternate nums in an array
         int arr[] = {4,5,1,7,2,9,2};
